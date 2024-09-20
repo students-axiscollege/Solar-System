@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(1..avif);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
+.sun{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: yellow;
+    box-shadow: 0 0 30px #fff;
+
+}
+.earth,
+.moon{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color:  transparent transparent transparet #777;
+}
+.earth{
+    width: 300px;
+    height: 300px;
+    animation:  orbit 20s linear infinite;
+
+}
+.moon{
+    width: 100px;
+    height: 100px;
+    animation:  orbit 3s linear infinite;
+   
+}
+.earth::before,
+.height::before{
+    position: absolute;
+    content: '';
+    border-radius: 50%;  
+
+}
+.earth::before{
+    width: 60px;
+    height: 60px;
+    background: aqua;
+    top: 20px;
+    left: 20px;
+}
+.moon::before{
+    width: 20px;
+    height: 20px;
+    background: #14cf14;
+    top: 5px;
+    left: 5px;
+
+}
+@keyframes orbit{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
