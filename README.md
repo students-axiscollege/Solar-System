@@ -1,1 +1,1 @@
-# Solor-system
+Solar System
